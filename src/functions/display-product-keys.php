@@ -7,10 +7,10 @@ function trd_display_product_keys($keys) { ?>
 		<table>
 			<thead>
 				<tr>
-					<th>Product</th>
-					<th>Product key</th>
-					<th>Download Link</th>
-					<th>How to activate</th>
+					<th><?php _e('Product name', 'trd-product-keys') ?></th>
+					<th><?php _e('Product key', 'trd-product-keys') ?></th>
+					<th><?php _e('Download link', 'trd-product-keys') ?></th>
+					<th><?php _e('How to activate', 'trd-product-keys') ?></th>
 				</tr>	
 			</thead>
 			<tbody>
@@ -43,7 +43,7 @@ function trd_display_product_keys($keys) { ?>
 							else: ?>
 							<ul style="margin: 0"> 
 								<?php foreach ($keys as $key): ?> 
-									<li><?php echo sprintf('<a href="%s" target="_blank">Download</a>', $key['download_link']); ?></li> 
+									<li><?php echo sprintf('<a href="%s" target="_blank">%s</a>', $key['download_link'], __('Download', 'trd-product-keys')); ?></li> 
 								<?php endforeach; ?> 
 								</ul> 
 							<?php endif; ?>
