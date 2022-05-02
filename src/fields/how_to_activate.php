@@ -1,3 +1,4 @@
+<?php 
 function trd_register_how_to_activate() {
 				if( function_exists('acf_add_local_field_group') ):
 
