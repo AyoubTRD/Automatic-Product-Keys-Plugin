@@ -3,7 +3,7 @@
 	Plugin Name: Automatic Product Keys
 	Description: A plugin allowing dynamic association of keys to orders. This plugin requires you to have the plugin Advanced Custom Fields PRO.
 	Author: Ayoub Taouarda
-	Version: 1.0.0
+	Version: 1.1.0
 	Text Domain: trdpk
 	*/
 
