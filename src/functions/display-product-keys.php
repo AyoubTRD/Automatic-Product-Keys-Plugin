@@ -50,11 +50,7 @@ function trd_display_product_keys($keys) { ?>
 						</td>
 						<td>
 							<?php 
-								foreach ($keys as $key) {
-									echo $key['how_to_activate'];
-									break;
-								}
-								$echoed = false;
+								echo get_field('trd_how_to_activate', $item->get_product()->get_id());
 							?>
 						</td>
 					</tr>
