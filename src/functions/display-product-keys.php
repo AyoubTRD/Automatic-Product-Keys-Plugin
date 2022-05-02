@@ -3,14 +3,14 @@ function trd_display_product_keys($keys) { ?>
 
 	<section style="margin: 30px 0">
 
-		<h2>Product key</h2>
+		<h2><?php _e('Product key', 'trdpk'); ?></h2>
 		<table>
 			<thead>
 				<tr>
-					<th><?php _e('Product name', 'trd-product-keys') ?></th>
-					<th><?php _e('Product key', 'trd-product-keys') ?></th>
-					<th><?php _e('Download link', 'trd-product-keys') ?></th>
-					<th><?php _e('How to activate', 'trd-product-keys') ?></th>
+					<th><?php _e('Product name', 'trdpk') ?></th>
+					<th><?php _e('Product key', 'trdpk') ?></th>
+					<th><?php _e('Download link', 'trdpk') ?></th>
+					<th><?php _e('How to activate', 'trdpk') ?></th>
 				</tr>	
 			</thead>
 			<tbody>
@@ -43,7 +43,7 @@ function trd_display_product_keys($keys) { ?>
 							else: ?>
 							<ul style="margin: 0"> 
 								<?php foreach ($keys as $key): ?> 
-									<li><?php echo sprintf('<a href="%s" target="_blank">%s</a>', $key['download_link'], __('Download', 'trd-product-keys')); ?></li> 
+									<li><?php echo sprintf('<a href="%s" target="_blank">%s</a>', $key['download_link'], __('Download', 'trdpk')); ?></li> 
 								<?php endforeach; ?> 
 								</ul> 
 							<?php endif; ?>
